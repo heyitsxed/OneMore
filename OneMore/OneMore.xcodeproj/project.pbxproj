@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0042DD5B300E621200302702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0042DD57300E621200302702 /* Assets.xcassets */; };
+		0042DD5D300E621200302702 /* OneMoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD59300E621200302702 /* OneMoreApp.swift */; };
+		0042DD67300E62E100302702 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD66300E62D600302702 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0042DD42300E5F6600302702 /* OneMore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneMore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0042DD57300E621200302702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0042DD59300E621200302702 /* OneMoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMoreApp.swift; sourceTree = "<group>"; };
+		0042DD66300E62D600302702 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		0042DD44300E5F6600302702 /* OneMore */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OneMore;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0042DD3F300E5F6600302702 /* Frameworks */ = {
@@ -32,7 +33,7 @@
 		0042DD39300E5F6600302702 = {
 			isa = PBXGroup;
 			children = (
-				0042DD44300E5F6600302702 /* OneMore */,
+				0042DD5A300E621200302702 /* OneMore */,
 				0042DD43300E5F6600302702 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +44,80 @@
 				0042DD42300E5F6600302702 /* OneMore.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0042DD5A300E621200302702 /* OneMore */ = {
+			isa = PBXGroup;
+			children = (
+				0042DD65300E629400302702 /* Resources */,
+				0042DD64300E629000302702 /* App */,
+				0042DD60300E622C00302702 /* Data */,
+				0042DD5F300E622300302702 /* Domain */,
+				0042DD5E300E621900302702 /* Presentation */,
+			);
+			path = OneMore;
+			sourceTree = "<group>";
+		};
+		0042DD5E300E621900302702 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0042DD62300E623B00302702 /* ViewModels */,
+				0042DD61300E623600302702 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0042DD5F300E622300302702 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0042DD60300E622C00302702 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0042DD63300E624600302702 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0042DD61300E623600302702 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0042DD66300E62D600302702 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0042DD62300E623B00302702 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0042DD63300E624600302702 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0042DD64300E629000302702 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0042DD59300E621200302702 /* OneMoreApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0042DD65300E629400302702 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0042DD57300E621200302702 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +134,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				0042DD44300E5F6600302702 /* OneMore */,
 			);
 			name = OneMore;
 			packageProductDependencies = (
@@ -109,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0042DD5B300E621200302702 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0042DD67300E62E100302702 /* HomeView.swift in Sources */,
+				0042DD5D300E621200302702 /* OneMoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
