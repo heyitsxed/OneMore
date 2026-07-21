@@ -94,6 +94,7 @@
 		0042DD5F300E622300302702 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				0042DD86300F576A00302702 /* AppConstants */,
 				0042DD6A300F10AC00302702 /* Extensions */,
 			);
 			path = Domain;
@@ -153,7 +154,6 @@
 		0042DD6A300F10AC00302702 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0042DD86300F576A00302702 /* AppConstants */,
 				0042DD6B300F10B300302702 /* Calendar+Extension.swift */,
 			);
 			path = Extensions;

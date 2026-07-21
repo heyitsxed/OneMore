@@ -135,7 +135,7 @@ struct NewHabitView: View {
                                             .frame(width: 45, height: 45)
                                             .background(
                                                 selectedDays.contains("\(day)\(index)")
-                                                ? Color.black
+                                                ? Color.orange
                                                 : Color.white
                                             )
                                             .clipShape(Circle())
