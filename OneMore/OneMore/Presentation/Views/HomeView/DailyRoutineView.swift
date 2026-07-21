@@ -8,78 +8,32 @@
 import SwiftUI
 
 struct DailyRoutineView: View {
-    
-    @State private var habits: [HabitModel]
-    
-    init() {
-        _habits = State(initialValue: sampleHabits)
-    }
-    
-    let sampleHabits: [HabitModel] = [
-        HabitModel(
-            title: "Drink a glass of water",
-            icon: "drop.fill",
-            iconColor: .orange,
-            streak: 3,
-            duration: "5 min",
-            completed: false
-        ),
-        HabitModel(
-            title: "Meditate to relax",
-            icon: "figure.mind.and.body",
-            iconColor: .green,
-            streak: 6,
-            duration: "15 min",
-            completed: true
-        ),
-        HabitModel(
-            title: "Stretch for 10 minutes",
-            icon: "figure.cooldown",
-            iconColor: .pink,
-            streak: 5,
-            duration: "10 min",
-            completed: false
-        ),HabitModel(
-            title: "Go for a short walk",
-            icon: "figure.walk",
-            iconColor: .green,
-            streak: 6,
-            duration: "15 min",
-            completed: true
-        ),HabitModel(
-            title: "Go for a long run",
-            icon: "figure.run",
-            iconColor: .green,
-            streak: 6,
-            duration: "15 min",
-            completed: true
-        )
-    ]
+    @StateObject var viewModel = HomeViewModel()
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
-                Text("Daily Routine")
+                Text(AppStrings.Home.dailyRoutine)
                     .font(.title3)
                     .fontWeight(.bold)
                 
                 Spacer()
                 
-                Button("See all") {
+                Button(AppStrings.Home.seeAll) {
                     
                 }
                 .font(.subheadline)
             }
             
             ScrollView(showsIndicators: false) {
-                ForEach($habits) { $habit in
+                ForEach($viewModel.habits) { $habit in
                     HabitRow(habit: $habit)
+                        .padding(.vertical, 3)
                         .onTapGesture {
                             habit.completed.toggle()
                         }
                 }
             }
-            
         }
         .padding()
     }

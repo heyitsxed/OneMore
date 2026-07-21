@@ -19,6 +19,9 @@
 		0042DD78300F2A0E00302702 /* HabitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD77300F2A0B00302702 /* HabitRow.swift */; };
 		0042DD7A300F307000302702 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD79300F306D00302702 /* SplashView.swift */; };
 		0042DD7C300F30BB00302702 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD7B300F30B900302702 /* RootView.swift */; };
+		0042DD7E300F412200302702 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD7D300F411200302702 /* HomeViewModel.swift */; };
+		0042DD85300F4D5F00302702 /* NewHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD83300F4D5F00302702 /* NewHabitView.swift */; };
+		0042DD88300F579000302702 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD87300F577600302702 /* AppStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		0042DD77300F2A0B00302702 /* HabitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRow.swift; sourceTree = "<group>"; };
 		0042DD79300F306D00302702 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		0042DD7B300F30B900302702 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0042DD7D300F411200302702 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0042DD83300F4D5F00302702 /* NewHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitView.swift; sourceTree = "<group>"; };
+		0042DD87300F577600302702 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		0042DD62300E623B00302702 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0042DD7D300F411200302702 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 		0042DD6A300F10AC00302702 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0042DD86300F576A00302702 /* AppConstants */,
 				0042DD6B300F10B300302702 /* Calendar+Extension.swift */,
 			);
 			path = Extensions;
@@ -157,6 +165,7 @@
 				0042DD6E300F16DC00302702 /* Components */,
 				0042DD66300E62D600302702 /* HomeView.swift */,
 				0042DD75300F29DD00302702 /* DailyRoutineView.swift */,
+				0042DD83300F4D5F00302702 /* NewHabitView.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -169,6 +178,14 @@
 				0042DD6F300F16E900302702 /* HeaderView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		0042DD86300F576A00302702 /* AppConstants */ = {
+			isa = PBXGroup;
+			children = (
+				0042DD87300F577600302702 /* AppStrings.swift */,
+			);
+			path = AppConstants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,13 +264,16 @@
 				0042DD70300F16ED00302702 /* HeaderView.swift in Sources */,
 				0042DD69300F065600302702 /* DayModel.swift in Sources */,
 				0042DD72300F170500302702 /* WeekCalendarView.swift in Sources */,
+				0042DD88300F579000302702 /* AppStrings.swift in Sources */,
 				0042DD6C300F10C100302702 /* Calendar+Extension.swift in Sources */,
 				0042DD67300E62E100302702 /* HomeView.swift in Sources */,
 				0042DD76300F29E100302702 /* DailyRoutineView.swift in Sources */,
+				0042DD7E300F412200302702 /* HomeViewModel.swift in Sources */,
 				0042DD7A300F307000302702 /* SplashView.swift in Sources */,
 				0042DD5D300E621200302702 /* OneMoreApp.swift in Sources */,
 				0042DD74300F298600302702 /* HabitModel.swift in Sources */,
 				0042DD7C300F30BB00302702 /* RootView.swift in Sources */,
+				0042DD85300F4D5F00302702 /* NewHabitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

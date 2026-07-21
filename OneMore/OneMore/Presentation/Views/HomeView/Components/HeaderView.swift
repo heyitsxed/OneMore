@@ -18,6 +18,7 @@ struct HeaderView: View {
                 Text(Date(), format: .dateTime.weekday(.wide).month(.wide).day().year())
                     .font(.subheadline)
                     .fontWeight(.semibold)
+                    .foregroundColor(.secondary)
             }
             
             Spacer()

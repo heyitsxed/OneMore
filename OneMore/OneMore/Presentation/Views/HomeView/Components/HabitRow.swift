@@ -20,9 +20,9 @@ struct HabitRow: View {
                     }
                     
                 } label: {
-                    Circle()
-                        .fill(habit.completed ? .orange : .gray.opacity(0.4))
-                        .frame(width: 18, height: 18)
+                    Image(systemName: habit.completed ? "checkmark.circle.fill" : "circle")
+                        .font(.title3)
+                        .foregroundStyle(habit.completed ? .orange : .gray.opacity(0.4))
                 }
                 
                 Rectangle()
