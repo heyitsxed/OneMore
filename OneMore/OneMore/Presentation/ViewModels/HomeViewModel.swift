@@ -11,9 +11,7 @@ import SwiftUI
 
 @MainActor
 class HomeViewModel: ObservableObject {
-    @Published var habits: [HabitModel] = []
-            
-    let sampleHabits: [HabitModel] = [
+    @Published var habits: [HabitModel] = [
         HabitModel(
             title: "Drink a glass of water",
             icon: "drop.fill",

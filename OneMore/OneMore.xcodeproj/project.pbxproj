@@ -22,6 +22,8 @@
 		0042DD7E300F412200302702 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD7D300F411200302702 /* HomeViewModel.swift */; };
 		0042DD85300F4D5F00302702 /* NewHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD83300F4D5F00302702 /* NewHabitView.swift */; };
 		0042DD88300F579000302702 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD87300F577600302702 /* AppStrings.swift */; };
+		0042DD8A301054A900302702 /* IconPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD89301054A000302702 /* IconPickerView.swift */; };
+		0042DD8C301054E800302702 /* HabitIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042DD8B301054E500302702 /* HabitIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		0042DD7D300F411200302702 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0042DD83300F4D5F00302702 /* NewHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitView.swift; sourceTree = "<group>"; };
 		0042DD87300F577600302702 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		0042DD89301054A000302702 /* IconPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerView.swift; sourceTree = "<group>"; };
+		0042DD8B301054E500302702 /* HabitIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		0042DD63300E624600302702 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0042DD8B301054E500302702 /* HabitIcon.swift */,
 				0042DD73300F298200302702 /* HabitModel.swift */,
 				0042DD68300F065100302702 /* DayModel.swift */,
 			);
@@ -173,6 +178,7 @@
 		0042DD6E300F16DC00302702 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0042DD89301054A000302702 /* IconPickerView.swift */,
 				0042DD77300F2A0B00302702 /* HabitRow.swift */,
 				0042DD71300F16FE00302702 /* WeekCalendarView.swift */,
 				0042DD6F300F16E900302702 /* HeaderView.swift */,
@@ -265,11 +271,13 @@
 				0042DD69300F065600302702 /* DayModel.swift in Sources */,
 				0042DD72300F170500302702 /* WeekCalendarView.swift in Sources */,
 				0042DD88300F579000302702 /* AppStrings.swift in Sources */,
+				0042DD8A301054A900302702 /* IconPickerView.swift in Sources */,
 				0042DD6C300F10C100302702 /* Calendar+Extension.swift in Sources */,
 				0042DD67300E62E100302702 /* HomeView.swift in Sources */,
 				0042DD76300F29E100302702 /* DailyRoutineView.swift in Sources */,
 				0042DD7E300F412200302702 /* HomeViewModel.swift in Sources */,
 				0042DD7A300F307000302702 /* SplashView.swift in Sources */,
+				0042DD8C301054E800302702 /* HabitIcon.swift in Sources */,
 				0042DD5D300E621200302702 /* OneMoreApp.swift in Sources */,
 				0042DD74300F298600302702 /* HabitModel.swift in Sources */,
 				0042DD7C300F30BB00302702 /* RootView.swift in Sources */,

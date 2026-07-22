@@ -19,6 +19,8 @@ struct NewHabitView: View {
     @State private var amount = ""
     
     @State private var selectedDays: Set<String> = ["T"]
+    @State private var selectedIcon = "calendar"
+    @State private var showIconPicker = false
     
     let days = ["M","T","W","T","F","S","S"]
     
@@ -26,10 +28,10 @@ struct NewHabitView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 25) {
-                    
                     HStack {
                         Text(AppStrings.Home.newHabit)
-                            .font(.largeTitle.bold())
+                            .font(.title)
+                            .fontWeight(.semibold)
                         
                         Spacer()
                         
@@ -49,9 +51,13 @@ struct NewHabitView: View {
                     HStack {
                         Spacer()
                         
-                        Image(systemName: "calendar")
-                            .font(.system(size: 90))
-                            .foregroundStyle(.green)
+                        Button {
+                            showIconPicker = true
+                        } label: {
+                            Image(systemName: selectedIcon)
+                                .font(.system(size: 90))
+                                .foregroundStyle(.green)
+                        }
                         
                         Spacer()
                     }
@@ -124,7 +130,6 @@ struct NewHabitView: View {
                                         }
                                         
                                     } label: {
-                                        
                                         Text(day)
                                             .fontWeight(.medium)
                                             .foregroundStyle(
@@ -171,6 +176,9 @@ struct NewHabitView: View {
                 .padding(.horizontal, 15)
             }
             .background(Color(.systemGroupedBackground))
+            .sheet(isPresented: $showIconPicker) {
+                IconPickerView(selectedIcon: $selectedIcon)
+            }
         }
     }
 }
