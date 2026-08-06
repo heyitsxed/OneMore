@@ -42,11 +42,6 @@ struct WeekCalendarView: View {
                                 .foregroundStyle(
                                     calendar.isDate(day.date, inSameDayAs: selectedDate) ? .white : .black
                                 )
-                                .shadow(
-                                    color: .black.opacity(0.08),
-                                    radius: 6,
-                                    y: 3
-                                )
                         }
                         .id(day.dayNumber)
                         .onTapGesture {
@@ -58,11 +53,11 @@ struct WeekCalendarView: View {
                         }
                     }
                 }
+                .padding()
             }
             .onAppear {
                 proxy.scrollTo(selectedDate, anchor: .center)
             }
-            .padding()
             .background(Color(.systemGroupedBackground))
         }
     }
